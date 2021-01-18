@@ -1,0 +1,308 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+/**************************************/
+
+.container {
+  height: 94vh;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 90px;
+}
+
+.content {
+  overflow: hidden;
+  margin-top: 95px;
+  box-sizing: border-box;
+}
+
+.header {
+  z-index: 100;
+  font-size: 25px;
+  font-weight: 800;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(240, 240, 240);
+}
+.footer {
+  height: 75px;
+  background: rgba(224, 224, 224);
+  position: relative;
+  width: 100%;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+}
+/*********************** header ******************************/
+.here{
+  color: black !important;
+  opacity: .8;
+}
+
+.box {
+  z-index: 1;
+  height: 105px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 0;
+  background: rgb(240, 240, 240);
+  opacity: 0;
+}
+
+.header ul{
+  list-style-type: none;
+  margin: 10px 20px;
+  padding: 0;
+  overflow: hidden;
+  /*   margin-right: 50px; */
+}
+.header li {
+  float: right;
+  margin: 0;
+  padding: 0;
+  color: grey;
+  padding: 10px;
+  margin: 10px;
+}
+
+.first{
+  position: fixed;
+  left: 20px;
+  top: 10px;
+  z-index: 500;
+}
+
+.header li a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: grey;
+}
+
+.header li a:hover {
+  color: black;
+  opacity: .8;
+}
+
+.toggle{
+  width: 100%;
+  padding: 10px 20px;
+  background: rgb(240, 240, 240);
+  text-align: right;
+  box-sizing: border-box;
+  color: grey;
+  font-size: 30px;
+  padding: 30px 40px 4px 0px;
+  display: none;
+}
+
+@media (max-width: 800px)
+{
+  .toggle {
+    display: block;
+  }
+
+  .header li{
+    float: none;
+    display: none;
+  }
+
+  .header li:first-child{
+    display: initial;
+  }
+
+  .header li a{
+    text-align: right;
+  }
+
+  .active{
+    display: block !important;
+  }
+
+}
+
+/***************** content *****************/
+
+.description{
+  padding: 0px 20px 10px 20px;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.skills{
+  margin-left: 25px;
+}
+
+h1{
+
+}
+
+h2{
+  font-size: 18px;
+}
+
+h3{
+  font-weight: 200;
+}
+
+p{
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(30, 77, 162, 0.8);
+}
+
+a:hover{
+  color: rgba(200, 30, 30, 1);
+}
+
+.x {
+  z-index: 2;
+  /*   width: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+  margin: 10px;
+  padding: 0px;
+  margin: 0px -10px;
+  /*   overflow: hidden; */
+}
+.xx {
+  /*   width: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+  margin: 10px;
+  padding: 0px;
+  margin: 0px -10px;
+  overflow: hidden;
+}
+.z1 {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 900px;
+  padding: 0px;
+  overflow: hidden;
+}
+.z2 {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 1200px;
+  padding: 0px;
+  margin: 0 20px;
+  overflow: hidden;
+}
+.z3 {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 1000px;
+  padding: 0;
+  overflow: hidden;
+}
+.z1 img, .z2 img, .z3 img {
+  height: 100%;
+}
+
+.titre1 {
+  font-weight: bold;
+  font-size: 48px;
+  margin: 20px 10px 10px 10px;
+  padding: 40px 30px 5px 30px;
+}
+.titre {
+  font-weight: bold;
+  font-size: 48px;
+  margin: 10px;
+  padding: 40px 30px 5px 30px;
+}
+
+.photo{
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  margin: 50px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.photo img {
+  height: 100%;
+}
+
+.about{
+  height: 100%;
+  background-image: url("../images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.abouttexte{
+   max-width: 285px;
+   padding: 150px 20px;
+}
+
+.vid{
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.vid iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/********************************FOOTER************************************/
+.linkedin {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 18px;
+  left: 40px;
+  overflow: hidden;
+}
+
+.instagram {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 80px;
+  bottom: 18px;
+  overflow: hidden;
+}
+
+.behance {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 18px;
+  left: 120px;
+  overflow: hidden;
+}
+.instagram img, .linkedin img, .behance img {
+  height: 100%;
+}
